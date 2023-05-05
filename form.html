@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Estimation</title>
+  <link rel="shortcut icon" href="https://www.apexure.com/images/apex-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/form.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script defer src="js/slider.js"></script>
+  <script defer src="js/myjs.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center mt-5">
+        <img src="https://www.apexure.com/images/icons/apexure-logo.svg" class="img-fluid constimage" alt=""><br>
+        <p id="tc"></p>
+      </div>
+    </div>
+    <!--  slider starts here -->
+    <div class="slider">
+      <!-- slide one starts here -->
+      <div class="slider-slides">
+        <p class="title text-center"> What platforms do you want to support?</p>
+        <div class="iconContainer">
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="120" name="ios" src="images/smartphone.png" alt="" id="ios" class="img-fluid  ">
+            </div>
+            <p>Ios Devices</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="100" name="andriod" src="images/mobile.png" alt="" id="andriod" class="img-fluid  ">
+            </div>
+            <p>Andriod Devices</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="140" name="cross" src="images/cross-platform.png" alt="" id="cross" class="img-fluid ">
+            </div>
+            <p>Cross Platform</p>
+          </div>
+        </div>
+      </div>
+      <!-- slide one ends here -->
+      <!-- slide 2 starts here -->
+
+      <div class="slider-slides">
+        <p class="title text-center"> What level of UI would you like ?</p>
+        <div class="iconContainer">
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="100" name="mvp" src="images/mvp.png" alt="" id="mvp" class="img-fluid ">
+
+            </div>
+            <p>MVP</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="50" name="basic" src="images/basic.png" alt="" id="basic" class="img-fluid ">
+
+            </div>
+            <p>Basic</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="80" name="polished" src="images/nails.png" alt="" id="polished" class="img-fluid ">
+
+            </div>
+            <p>Polished</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="10" name="uialready" src="images/checked.png" alt="" id="uialready" class="img-fluid ">
+
+            </div>
+            <p>I have UI Already</p>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- slide 2 ends here -->
+
+
+      <!-- slide 3 starts here -->
+
+      <div class="slider-slides">
+        <p class="title text-center"> How do people login?</p>
+        <div class="iconContainer">
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="70" name="email" id="email" src="images/email.png" alt="" class="img-fluid icon">
+
+            </div>
+            <p>Email</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="60" name="sociallogin" id="sociallogin" src="images/social-media.png" alt=""
+                class="img-fluid icon">
+
+            </div>
+            <p>Social Login</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="60" name="github" id="github" src="images/github.png" alt="" class="img-fluid icon">
+
+            </div>
+            <p>Github Signup</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img data-num="0" name="nologinreq" id="nologinreq" src="images/nologin.png" alt=""
+                class="img-fluid icon">
+
+            </div>
+            <p>No Login Required</p>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- slide 3 ends here -->
+
+      <!-- slide 4 starts here -->
+      <div class="slider-slides">
+        <p class="title text-center"> Geo Location and dates ?</p>
+        <div class="iconContainer">
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="geolocation" data-num="18" src="images/geolocation.png" alt="" id="geoloc" class="img-fluid icon"
+              >
+
+            </div>
+            <p>Maps and Geolocation</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="calender" data-num="14" src="images/calendar.png" alt="" id="calender" class="img-fluid icon"
+                      >
+
+            </div>
+            <p>Calender</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="booking" data-num="10" src="images/booking.png" alt="" id="booking" class="img-fluid icon"
+              >
+
+            </div>
+            <p>Booking</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="none" data-num="0" src="images/no.png" alt="" id="noneloc" class="img-fluid icon"
+              >
+
+            </div>
+            <p>None</p>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- slide 4 ends here -->
+
+
+      <!-- slide 5 starts here -->
+      <div class="slider-slides">
+        <p class="title text-center"> What is your about?</p>
+        <div class="iconContainer">
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="ecom" id="ecom" data-num="150" src="images/ecommerce.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>e-Commerce</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="iot" id="iot" data-num="220" src="images/iot.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>IOT/Hardware</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="socialnetworking" id="socialnetworking" data-num="200" src="images/social-media.png" alt=""
+              class="img-fluid icon" >
+
+            </div>
+            <p>Social Networking</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="education" id="education" data-num="180" src="images/education.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>Education</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="HealthCare" id="healthcare" data-num="185" src="images/hospital.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>HealthCare</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="maps" id="maps" data-num="190" src="images/maps.png" alt="" class="img-fluid icon"
+                      >
+
+            </div>
+            <p>Maps and Location</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="Events" id="events" data-num="180" src="images/red-carpet.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>Events</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="AI" data-num="210" id="ai" src="images/artificial-intelligence.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>AI</p>
+          </div>
+
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="Others" id="others" data-num="100" src="images/more-information.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>Others</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- slide 5 ends here -->
+
+
+
+      <!-- slider 6 starts here -->
+
+      <div class="slider-slides">
+        <p class="title text-center"> Users and Accounts?</p>
+        <div class="iconContainer">
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="userprofile" id="userprofile" data-num="10" src="images/user profile.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>User Profiles</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="dashboard" id="dashboard" data-num="8" src="images/dashboard.png" alt="" class="img-fluid icon"
+                      >
+
+            </div>
+            <p>Dashboard</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="photos" id="photos" data-num="10" src="images/photo-camera.png" alt="" class="img-fluid icon"
+                    >
+
+            </div>
+            <p>Photos</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="audio" id="audio" data-num="8" src="images/speaker-filled-audio-tool.png" alt=""
+              class="img-fluid icon" >
+
+            </div>
+            <p>Audio/Video</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="activityfeed" id="activityfeed" data-num="4" src="images/activity-feed.png" alt="" class="img-fluid icon"
+                    >
+
+            </div>
+            <p>Activity Feed</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="ratings" id="ratings" data-num="6" src="images/review.png" alt="" class="img-fluid icon"
+                    >
+
+            </div>
+            <p>Ratings and Reviews</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="fileupload" id="fileupload" data-num="10" src="images/cloud-computing.png" alt="" class="img-fluid icon">
+                    
+
+            </div>
+            <p>File Upload</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="chat" id="chat" data-num="8" src="images/chat.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>Chat Messaging</p>
+          </div>
+
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="search" id="search" data-num="8" src="images/search.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>Search</p>
+          </div>
+        </div>
+      </div>
+      <!-- slider 6 ends here -->
+
+      <!-- slider 7 starts here -->
+      <div class="slider-slides">
+        <p class="title text-center">User Engagement ?</p>
+        <div class="iconContainer">
+          <div class="imageContainer">
+            <div class="imgDiv">
+              
+              <img name="emailssocial" id="emailssocial" data-num="12" src="images/email.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>EmailsSocial</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="sharing" id="sharing" data-num="12" src="images/share.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>Sharing</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="push-notification" id="push-notification" data-num="10" src="images/push-notification.png" alt=""
+              class="img-fluid icon" >
+
+            </div>
+            <p>Push Notification</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="smsintegration" id="smsintegration" data-num="12" src="images/sms.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>SMS Integration</p>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- slider 7 ends here -->
+
+
+      <!-- slider 8 starts here -->
+      <div class="slider-slides">
+        <p class="title text-center"> Payment and Billing</p>
+        <div class="iconContainer">
+          <div class="imageContainer">
+            <div class="imgDiv">
+              
+              <img name="paymentprocessing" id="paymentprocessing" data-num="18" src="images/cashless-payment.png" alt=""
+              class="img-fluid icon" >
+
+            </div>
+            <p>Payment Processing</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="shoppingcart" id="shoppingcart" data-num="10" src="images/shopping-cart.png" alt="" class="img-fluid icon"
+                    >
+
+            </div>
+            <p>Shopping Cart</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="Subscription" id="subscription" data-num="12" src="images/subscription.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>Subscription</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+             
+              <img name="inapppurse" id="inapppurse" data-num="20" src="images/purchasing.png" alt="" class="img-fluid icon"
+              >
+            </div>
+            <p>In-App Purchases</p>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- slider 8 ends here -->
+
+
+
+
+      <!-- slider 9 starts here -->
+      <div class="slider-slides">
+        <p class="title text-center"> CMS and other Features</p>
+        <div class="iconContainer">
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="cms" id="cms" data-num="60" src="images/cms.png" alt="" class="img-fluid icon"
+                    >
+              
+
+            </div>
+            <p>Content Management System</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              
+              <img name="moderation" id="moderation" data-num="40" src="images/moderator.png" alt="" class="img-fluid icon"
+              >
+
+            </div>
+            <p>Moderation and Approval</p>
+
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+            
+              <img name="reporting" id="reporting" data-num="20" src="images/analysis.png" alt="" class="img-fluid icon"
+                    >
+            </div>
+            <p>Reporting and Analytics</p>
+          </div>
+          <div class="imageContainer">
+            <div class="imgDiv">
+              <img name="inapppurchases" id="inapppurchases" data-num="40" src="images/purchasing.png" alt="" class="img-fluid icon"
+                    >
+            
+            </div>
+            <p>In-App Purchases</p>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <!-- slider 9 ends here -->
+
+      <!-- slider 10 starts here -->
+      <div class="slider-slides">
+        <p class="title text-center">Where Can we Email You Your App Cost Estimate?</p>
+        <div class="row">
+          <div class="col-md-6 mx-auto pt-3 p-5  p-md-0">
+            <form action="thankyou.html" data-aos="fade-up">
+
+              <div class="form-outline mb-3">
+
+                <input type="text" pattern="[a-zA-Z\s]+" id="form3Example1" minlength="5" maxlength="20" class="form-control fontawesome"
+                  placeholder="&#xf406;    Enter Your Name" required />
+              </div>
+
+
+              <div class="form-outline mb-3">
+                <input type="email" id="form3Example2" class="form-control fontawesome"
+                  placeholder="&#xf0e0;   Enter Your Email Address" required />
+              </div>
+
+
+              <div class="form-outline mb-3">
+                <input type="tel" pattern="[0-9]{10}" id="form3Example3"minlength="10" maxlength="10" class="form-control fontawesome"
+                  placeholder="&#xf095;   Enter Your Phone" required />
+              </div>
+              <div class=" text-center  mb-3 ">
+                <button type="submit" class="btn mt-4" id="formbtn">
+                  Get Your Estimate
+                </button>
+              </div>
+
+            </form>
+            <p class="powered text-center">This Calculator is Powered by Younis & Bilal</p>
+          </div>
+        </div>
+      </div>
+      <!-- slider 10 ends here -->
+    </div>
+  </div>
+
+  
+</div>
+
+  <div class="slider-nav">
+    <div class="slider-prev null"><i class="fa fa-arrow-left arrow"></i></div>
+    <div class="slider-counter">1 of 10</div>
+    <div class="slider-next null "><i class="fa fa-arrow-right arrow "></i></div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+</html>

@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
+
+body {
+   background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80'); 
+  /* background-image: url("https://images.unsplash.com/photo-1625225233840-695456021cde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 4000px rgba(27, 61, 88, 0.5) inset;
+}
+.logoImg{
+    display: none;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.p1 {
+  font-size: 72px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  letter-spacing: 8px;
+  color: #ffffff;
+}
+.p2 {
+  font-size: 26px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+.p3 {
+  font-size: 18px;
+  margin-top: 30px;
+  padding: 0 250px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.button {
+  background-color: #fb8500 !important;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(0, 0, 0);
+  margin-top: 10vh;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.button:hover {
+  color: rgb(0, 0, 0);
+  opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+    .p3{
+        padding: 0px 150px;
+    } 
+}
+@media (max-width: 768px) {
+    .p3{
+     padding: 0px 100px;
+    } 
+ }
+@media (max-width: 560px) {
+    .p3{
+     padding: 0px 40px;
+    } 
+ }
+@media (max-width: 425px) {
+    .p1{
+        font-size: 56px;
+    }
+    .p2{
+        font-size: 22px;
+    }
+    .p3{
+        line-height: 30px;
+     padding: 0px 20px;
+    } 
+
+ }
+@media (max-width: 350px) {
+    body{
+      background-image: none !important;
+      box-shadow: none;
+      background-color: rgb(255, 255, 255)  !important;
+      
+
+     
+    }
+    .logoImg{
+        display: block;
+        margin: 40px 10px;
+        /* padding-top: 60px 0 !important; */
+    }
+    .p1{
+       display: none;
+    }
+    .p2{
+        font-size: 22px;
+        color: black !important;
+    }
+    .p3{
+        line-height: 30px;
+     padding: 0px 1px;
+     color: black !important;
+    } 
+    
+ }
