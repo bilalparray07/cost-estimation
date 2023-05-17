@@ -75,6 +75,7 @@ body {
   font-size: 20px;
   padding-top: 20px;
   font-weight: bold;
+  padding-bottom: 20px;
 }
 
 .iconContainer{
@@ -151,7 +152,7 @@ body {
   font-family: "Helvetica", FontAwesome, sans-serif;
 }
 .powered {
-  font-size: 8px;
+  font-size: 12px;
 }
 .slider-nav {
   bottom: 20%;
@@ -160,7 +161,11 @@ body {
 .moveDown{
   transform: translateY(220%);
  }
-
+.imgDiv img:hover{
+  background-color: hsl(176, 77%, 48%);
+  cursor: pointer;
+  border-radius: 30%;
+}
 /* Media Queries */
 
 @media (max-width: 768px) {

@@ -64,8 +64,8 @@ a {
   text-transform: uppercase;
 }
 .button:hover {
-  color: rgb(0, 0, 0);
-  opacity: 0.6;
+  color: #fff;
+  opacity: 0.9;
 }
 
 @media (max-width: 900px) {

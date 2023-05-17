@@ -12,6 +12,7 @@ swipeToSlide: false,
   });
   $(".slider-nav .slider-prev").click(function () {
     $(".slider").slick("slickPrev");
+    $('.slider-next').addClass('null')
   });
   
   $(".slider-nav .slider-next").click(function () {

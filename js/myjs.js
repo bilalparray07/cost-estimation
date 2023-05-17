@@ -1,13 +1,14 @@
 let dollars = 0;
-let getSlidePrice1 ;
-let getSlidePrice2 ;
-let getSlidePrice3 ;
-let getSlidePrice4 ;
-let getSlidePrice5 ;
-let getSlidePrice6 ;
-let getSlidePrice7 ;
-let getSlidePrice8 ;
-let getSlidePrice9 ;
+// let value = 0;
+let getSlidePrice1 = 0;
+let getSlidePrice2 = 0;
+let getSlidePrice3 = 0;
+let getSlidePrice4 = 0;
+let getSlidePrice5 = 0;
+let getSlidePrice6 = 0;
+let getSlidePrice7 = 0;
+let getSlidePrice8 = 0;
+let getSlidePrice9 = 0;
 let slidePrice6= 0;
 let slide6elem = 0;
 let slidePrice7= 0;
@@ -16,7 +17,7 @@ let slidePrice8= 0;
 let slide8elem = 0;
 let slidePrice9= 0;
 let slide9elem = 0;
-
+let sum  = 0;
 // slide one alll 
 let slidePrice= 0;
 let ios = document.getElementById("ios");
@@ -184,102 +185,125 @@ slide5.forEach((element) => {
     });
   });
 // loop for 6th slide
+
 slide6.forEach((element) => {
-    element.addEventListener("click", () => {
+  element.addEventListener("click", () => {
       $(".slider-next").removeClass("null");
-        if (!element.classList.contains('green')) {
-            element.classList.add('green')
-         slide6elem= parseInt(element.getAttribute('data-num'));
-       slidePrice6+=slide6elem;
-        localStorage.setItem('slidePrice6',slidePrice6)
-        getSlidePrice6  = parseInt(localStorage.getItem('slidePrice6'));
-        }else if (element.classList.contains('green')) {
-            element.classList.remove('green')
-            let currentValue = localStorage.getItem('slidePrice6');
-             let torem= parseInt(element.getAttribute('data-num'));
-            currentValue = parseInt(currentValue);
-            currentValue -= torem;
-            localStorage.setItem('slidePrice6', currentValue);
-            getSlidePrice6  = parseInt(localStorage.getItem('slidePrice6')); 
-        }
-    });
+      let slidePrice6 = 0;
+      slide6.forEach((selectedElement) => {
+          if (selectedElement.classList.contains('green')) {
+              slidePrice6 += parseInt(selectedElement.getAttribute('data-num'));
+            
+          }
+      });
+      if (!element.classList.contains('green')) {
+          element.classList.add('green');
+          slidePrice6 += parseInt(element.getAttribute('data-num'));
+         
+      } else {
+          element.classList.remove('green');
+          slidePrice6 -= parseInt(element.getAttribute('data-num'));
+      }
+      localStorage.setItem('slidePrice6', slidePrice6);
+       getSlidePrice6 = parseInt(localStorage.getItem('slidePrice6'));
+      if (getSlidePrice6 == 0) {
+          $(".slider-next").addClass("null");
+      }
+      console.log(slidePrice6);
   });
+});
 
 // slide 7th
+
   slide7.forEach((element) => {
     element.addEventListener("click", () => {
-      $(".slider-next").removeClass("null");
+        $(".slider-next").removeClass("null");
+        let slidePrice7 = 0;
+        slide7.forEach((selectedElement) => {
+            if (selectedElement.classList.contains('green')) {
+                slidePrice7 += parseInt(selectedElement.getAttribute('data-num'));
+            }
+        });
         if (!element.classList.contains('green')) {
-            element.classList.add('green')
-         slide7elem= parseInt(element.getAttribute('data-num'));
-       slidePrice7+=slide7elem;
-        localStorage.setItem('slidePrice7',slidePrice7)
-        getSlidePrice7  = parseInt(localStorage.getItem('slidePrice7'));
-        }else if (element.classList.contains('green')) {
-            element.classList.remove('green')
-            
-            let currentValue = localStorage.getItem('slidePrice7');
-             let torem= parseInt(element.getAttribute('data-num'));
-            currentValue = parseInt(currentValue);
-            currentValue -= torem;
-            localStorage.setItem('slidePrice7', currentValue);
-            getSlidePrice7  = parseInt(localStorage.getItem('slidePrice7')); 
+            element.classList.add('green');
+            slidePrice7 += parseInt(element.getAttribute('data-num'));
+        } else {
+            element.classList.remove('green');
+            slidePrice7 -= parseInt(element.getAttribute('data-num'));
+        }
+        localStorage.setItem('slidePrice7', slidePrice7);
+      getSlidePrice7 = parseInt(localStorage.getItem('slidePrice7'));
+        if (getSlidePrice7 == 0) {
+            $(".slider-next").addClass("null");
         }
     });
-  });
+});
 
 // slide 8th
+
 slide8.forEach((element) => {
   element.addEventListener("click", () => {
-    $(".slider-next").removeClass("null");
+      $(".slider-next").removeClass("null");
+      let slidePrice8 = 0;
+      slide8.forEach((selectedElement) => {
+          if (selectedElement.classList.contains('green')) {
+              slidePrice8 += parseInt(selectedElement.getAttribute('data-num'));
+             
+          }
+      });
       if (!element.classList.contains('green')) {
-          element.classList.add('green')
-       slide8elem= parseInt(element.getAttribute('data-num'));
-     slidePrice8+=slide8elem;
-      localStorage.setItem('slidePrice8',slidePrice8)
-      getSlidePrice8  = parseInt(localStorage.getItem('slidePrice8'));
-      }else if (element.classList.contains('green')) {
-          element.classList.remove('green')
-          
-          let currentValue = localStorage.getItem('slidePrice8');
-           let torem= parseInt(element.getAttribute('data-num'));
-          currentValue = parseInt(currentValue);
-          currentValue -= torem;
-          localStorage.setItem('slidePrice8', currentValue);
-          getSlidePrice8  = parseInt(localStorage.getItem('slidePrice8')); 
+          element.classList.add('green');
+          slidePrice8 += parseInt(element.getAttribute('data-num'));
+         
+      } else {
+          element.classList.remove('green');
+          slidePrice8 -= parseInt(element.getAttribute('data-num'));
+      }
+      localStorage.setItem('slidePrice8', slidePrice8);
+      getSlidePrice8 = parseInt(localStorage.getItem('slidePrice8'));
+      if (getSlidePrice8 == 0) {
+          $(".slider-next").addClass("null");
       }
   });
 });
+
 // slide 9th
+
 slide9.forEach((element) => {
   element.addEventListener("click", () => {
-    $(".slider-next").removeClass("null");
+      $(".slider-next").removeClass("null");
+      let slidePrice9 = 0;
+      slide9.forEach((selectedElement) => {
+          if (selectedElement.classList.contains('green')) {
+              slidePrice9 += parseInt(selectedElement.getAttribute('data-num'));
+          }
+      });
       if (!element.classList.contains('green')) {
-          element.classList.add('green')
-       slide9elem= parseInt(element.getAttribute('data-num'));
-     slidePrice9+=slide9elem;
-      localStorage.setItem('slidePrice9',slidePrice9)
-      getSlidePrice9  = parseInt(localStorage.getItem('slidePrice9'));
-      }else if (element.classList.contains('green')) {
-          element.classList.remove('green')
-     
-          let currentValue = localStorage.getItem('slidePrice9');
-           let torem= parseInt(element.getAttribute('data-num'));
-          currentValue = parseInt(currentValue);
-          currentValue -= torem;
-          localStorage.setItem('slidePrice9', currentValue);
-          getSlidePrice9  = parseInt(localStorage.getItem('slidePrice9')); 
+          element.classList.add('green');
+          slidePrice9 += parseInt(element.getAttribute('data-num'));
+      } else {
+          element.classList.remove('green');
+          slidePrice9 -= parseInt(element.getAttribute('data-num'));
+          
       }
+      localStorage.setItem('slidePrice9', slidePrice9);
+     getSlidePrice9 = parseInt(localStorage.getItem('slidePrice9'));
+     
+      if (getSlidePrice9 == 0) {
+          $(".slider-next").addClass("null");
+      }
+
   });
 });
-  
+
+
+
 // form name displaying in thankyou page and adding value 
 let formbtn = document
   .getElementById("formbtn")
   .addEventListener("click", () => {
-  
-    let sum = getSlidePrice1+ getSlidePrice2 + getSlidePrice3+getSlidePrice4+getSlidePrice5+getSlidePrice6+getSlidePrice7+getSlidePrice8+getSlidePrice9;
-   localStorage.setItem('sum',sum)
+    sum = getSlidePrice1+getSlidePrice2+getSlidePrice3+getSlidePrice4+getSlidePrice5+getSlidePrice6+getSlidePrice7+getSlidePrice8+getSlidePrice9;
+    localStorage.setItem('sum',sum);
     let formname = document.getElementById("form3Example1").value;
     localStorage.setItem("formname", formname);
   });
